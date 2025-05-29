@@ -1,0 +1,21 @@
+# setting up conda envrionmentn based on yaml file:
+# conda env create -f environment.yml
+#
+# update cexisting environment:
+# conda env update --file environment.yml --prune
+#
+# creating yaml file out of existing environment:
+# conda my_env export > environment.yml
+
+
+name: googlephotos 
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11.5
+  - pip
+  - google-auth
+  - google-auth-oauthlib
+  - google-auth-httplib2
+  - google-api-python-client
